@@ -22,6 +22,9 @@ else
 	sleep 10
 fi
 
+################ Wireguard Install ################
+git clone https://www.github.com/ryanvanmass/Wireguard /home/ryan/Documents/Wireguard/
+
 ################ Configure FSTAB ################
 sudo su -c "cat fstab.txt >> /etc/fstab"
 sudo mkdir -p /media/ryan/Local/Olympus /media/ryan/Local/Hades /media/ryan/Local/Labyrinth /media/ryan/Remote/'1.Olympus(Remote)' /media/ryan/Remote/'2.Hades(Remote)' /media/ryan/Remote/'3.Labyrinth(Remote)'

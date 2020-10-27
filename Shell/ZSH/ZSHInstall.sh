@@ -29,11 +29,6 @@ rm 'MesloLGS NF Bold Italic.ttf'
 mkdir /home/$USER/.config/terminator
 cp Shell/ZSH/TermConfig/Terminator.config /home/$USER/.config/terminator/config
 
-# Tilda
-mkdir /home/$USER/.config/tilda
-cp Shell/ZSH/TermConfig/Tilda.config_0 /home/$USER/.config/tilda/config_0
-cp /usr/share/applications/tilda.desktop /home/$USER/.config/autostart/
-
 ############### Copys ZSHRC file to User .zshrc ###############
 cat Shell/ZSH/zshrc >> /home/$USER/.zshrc
 
@@ -42,8 +37,3 @@ sudo usermod -s /bin/zsh $USER
 
 ############### Copies Aliasrc file to user Directory ###############
 cp Shell/aliasrc /home/$USER/.aliasrc
-
-############### Changes Display Manager from Wayland to X11 ###############
-#This Change is made to fix issue with Tilda Keyboard Shortcuts not working
-sudo su -c "rm /etc/gdm/custom.conf"
-sudo su -c "cp Shell/ZSH/TermConfig/DM.custom.conf /etc/gdm/custom.conf"

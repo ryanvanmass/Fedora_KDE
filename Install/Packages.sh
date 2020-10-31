@@ -11,7 +11,7 @@ sudo dnf install -y obs-studio
 
 ################ OpenRazer and Polychromatic ################
 #OpenRazer
-sudo dnf install kernel-devel
+sudo dnf install  -y kernel-devel
 sudo dnf config-manager --add-repo https://download.opensuse.org/repositories/hardware:razer/Fedora_Rawhide/hardware:razer.repo
 sudo dnf install -y openrazer-meta
 
@@ -34,22 +34,22 @@ sudo dnf install -y htop iotop iftop net-tools openssh-server terminator timeshi
 
 ################ Vivaldi Install ################
 wget https://downloads.vivaldi.com/stable/vivaldi-stable-3.2.1967.47-1.x86_64.rpm
-sudo yum --nogpgcheck localinstall vivaldi-stable-3.2.1967.47-1.x86_64.rpm
+sudo yum --nogpgcheck localinstall -y vivaldi-stable-3.2.1967.47-1.x86_64.rpm
 rm vivaldi-stable-3.2.1967.47-1.x86_64.rpm
 
 ################ RealVNC Viewer Install ################
 wget https://www.realvnc.com/download/file/viewer.files/VNC-Viewer-6.20.529-Linux-x64.rpm
-sudo yum --nogpgcheck localinstall VNC-Viewer-6.20.529-Linux-x64.rpm
+sudo yum --nogpgcheck localinstall -y VNC-Viewer-6.20.529-Linux-x64.rpm
 rm VNC-Viewer-6.20.529-Linux-x64.rpm
 
 ################ OnlyOffice Install ################
 wget https://download.onlyoffice.com/install/desktop/editors/linux/onlyoffice-desktopeditors.x86_64.rpm
-sudo yum --nogpgcheck localinstall onlyoffice-desktopeditors.x86_64.rpm
+sudo yum --nogpgcheck localinstall -y onlyoffice-desktopeditors.x86_64.rpm
 rm onlyoffice-desktopeditors.x86_64.rpm
 
 ################ Zoom Install ################
 wget https://zoom.us/client/latest/zoom_x86_64.rpm
-sudo yum --nogpgcheck localinstall zoom_x86_64.rpm
+sudo yum --nogpgcheck localinstall -y zoom_x86_64.rpm
 rm zoom_x86_64.rpm
 
 ############### Installs Joplin ###############

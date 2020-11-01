@@ -23,7 +23,7 @@ else
 fi
 
 ################ Wireguard Install ################
-git clone https://www.github.com/ryanvanmass/Wireguard /home/ryan/Documents/Wireguard/
+git clone https://www.github.com/ryanvanmass/Wireguard /home/$USER/Documents/Wireguard/
 
 ################ Configure FSTAB ################
 sudo su -c "cat fstab.txt >> /etc/fstab"

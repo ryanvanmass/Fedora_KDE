@@ -12,11 +12,11 @@ sudo dnf install -y obs-studio
 ################ OpenRazer and Polychromatic ################
 #OpenRazer
 sudo dnf install  -y kernel-devel
-sudo dnf config-manager --add-repo https://download.opensuse.org/repositories/hardware:razer/Fedora_Rawhide/hardware:razer.repo
+sudo dnf config-manager --add-repo https://download.opensuse.org/repositories/hardware:razer/Fedora_33/hardware:razer.repo
 sudo dnf install -y openrazer-meta
 
 #Polychromatic
-sudo dnf config-manager --add-repo https://download.opensuse.org/repositories/hardware:razer/Fedora_Rawhide/hardware:razer.repo
+sudo dnf config-manager --add-repo https://download.opensuse.org/repositories/hardware:razer/Fedora_33/hardware:razer.repo
 sudo dnf install -y polychromatic
 
 ################ Kdenlive Install ################

@@ -6,7 +6,7 @@ sudo dnf install -y  'remmina*'
 
 
 ################ OBS Install ################
-sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+sudo dnf install -y https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
 sudo dnf install -y obs-studio
 
 ################ Kdenlive Install ################
@@ -56,9 +56,9 @@ rm zoom_x86_64.rpm
 wget -O - https://raw.githubusercontent.com/laurent22/joplin/dev/Joplin_install_and_update.sh | bash
 
 ################ VMWare Workstation Install ################
-wget https://download3.vmware.com/software/wkst/file/VMware-Workstation-Full-15.5.6-16341506.x86_64.bundle
-sudo sh ./VMware-Workstation-Full-15.5.6-16341506.x86_64.bundle
-rm VMware-Workstation-Full-15.5.6-16341506.x86_64.bundle
+#wget https://download3.vmware.com/software/wkst/file/VMware-Workstation-Full-15.5.6-16341506.x86_64.bundle
+#sudo sh ./VMware-Workstation-Full-15.5.6-16341506.x86_64.bundle
+#rm VMware-Workstation-Full-15.5.6-16341506.x86_64.bundle
 
 ################ MS Core Fonts Install ################
 wget https://sourceforge.net/projects/mscorefonts2/files/rpms/msttcore-fonts-installer-2.6-1.noarch.rpm/download -O msttcore-fonts-installer-2.6-1.noarch.rpm

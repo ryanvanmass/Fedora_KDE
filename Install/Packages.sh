@@ -24,10 +24,10 @@ sudo dnf config-manager --add-repo https://download.opensuse.org/repositories/ha
 sudo dnf install -y polychromatic
 
 ################ VS Code Install ################
-sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
-sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo'
-sudo dnf check-update
-sudo dnf install -y code
+#sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+#sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo'
+#sudo dnf check-update
+#sudo dnf install -y code
 
 ################ Misc Packages ################
 sudo dnf install -y htop iotop iftop net-tools openssh-server terminator timeshift nmap flameshot tlp hugo yakuake syncthing 

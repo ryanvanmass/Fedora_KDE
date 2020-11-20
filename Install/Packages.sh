@@ -30,7 +30,7 @@ sudo dnf install -y polychromatic
 #sudo dnf install -y code
 
 ################ Misc Packages ################
-sudo dnf install -y htop iotop iftop net-tools openssh-server terminator timeshift nmap flameshot tlp hugo yakuake syncthing 
+sudo dnf install -y htop iotop iftop net-tools openssh-server terminator timeshift nmap flameshot tlp hugo yakuake syncthing telegram-desktop
 
 ################ Vivaldi Install ################
 wget https://downloads.vivaldi.com/stable/vivaldi-stable-3.2.1967.47-1.x86_64.rpm
